@@ -7,7 +7,7 @@ export const site = {
   phoneRaw: "+8801620518277",
   location: "Feni, Chattogram, Bangladesh",
   github: "https://github.com/AtaulHoqueShahi",
-  linkedin: "www.linkedin.com/in/ataul-hoque-shahi",
+  linkedin: "https://www.linkedin.com/in/ataul-hoque-shahi",
   whatsapp: "https://wa.me/8801620518277",
 };
 5
