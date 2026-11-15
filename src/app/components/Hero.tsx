@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import ProfileImage from "@/assets/WhatsApp Image 2026-07-29 at 12.58.03 AM.jpeg";
+
 import {
   ArrowDownToLine,
   ArrowUpRight,
   CodeXml,
   Link as LinkIcon,
+  Eye,
 } from "lucide-react";
 import { site } from "@/app/data/site";
 
@@ -14,27 +16,44 @@ export default function Hero() {
     <section className="wrap hero" id="home">
       <div>
         <div className="eyebrow">Explore. Create. Build.</div>
+
         <h1 className="display-title">
-          Hi, I&apos;m <span className="gradient-text">{site.name}</span>
+          Hi, I'm <span className="gradient-text">{site.name}</span>
         </h1>
+
         <h2 className="text-xl sm:text-2xl font-semibold text-slate-200">
-          Web Developer
+          {site.designation}
         </h2>
+
         <p className="hero-copy mt-4">
-          I build modern, responsive and user-friendly web experiences. I enjoy turning
-          creative ideas into practical digital solutions through thoughtful design and
-          clean code.
+          I build modern, responsive and user-friendly web experiences. I enjoy
+          turning creative ideas into practical digital solutions through
+          thoughtful design and clean code.
         </p>
 
         <div className="hero-actions">
           <Link className="btn btn-primary" href="#projects">
             Explore My Work <ArrowUpRight size={17} />
           </Link>
+
           <Link className="btn btn-outline" href="#contact">
             Contact Me
           </Link>
-          <a className="btn btn-outline" href="/resume.pdf" download>
-            Resume <ArrowDownToLine size={16} />
+          <a
+            className="btn btn-outline"
+            href="/ATAUL%20HOQUE%20SHAHI.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Resume <Eye size={16} />
+          </a>
+
+          <a
+            className="btn btn-outline"
+            href="/ATAUL%20HOQUE%20SHAHI.pdf"
+            download="ATAUL HOQUE SHAHI.pdf"
+          >
+            Download Resume <ArrowDownToLine size={16} />
           </a>
         </div>
 
@@ -43,6 +62,7 @@ export default function Hero() {
             <CodeXml size={17} className="inline mr-1" />
             GitHub ↗
           </a>
+
           <a href={site.linkedin} target="_blank" rel="noreferrer">
             <LinkIcon size={17} className="inline mr-1" />
             LinkedIn ↗
@@ -51,17 +71,15 @@ export default function Hero() {
       </div>
 
       <div className="photo-frame">
-<div className="photo-frame">
-  <Image
-    src={ProfileImage}
-    alt="Ataul Hoque Shahi"
-    fill
-    priority
-    sizes="(max-width: 768px) 100vw, 340px"
-    className="profile-image"
-  />
-</div>
-</div>
+        <Image
+          src={ProfileImage}
+          alt="Ataul Hoque Shahi"
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 340px"
+          className="profile-image"
+        />
+      </div>
     </section>
   );
 }
