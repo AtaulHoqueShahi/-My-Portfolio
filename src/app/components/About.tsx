@@ -22,7 +22,7 @@ export default function About() {
         <div className="panel">
           <p>
             I&apos;m Ataul Hoque Shahi, a Web Developer focused on frontend development.
-            My programming journey began in 2025 with curiosity about how websites work,
+            My programming journey began in 2026 with curiosity about how websites work,
             and that curiosity grew into an interest in creating useful, accessible and
             engaging digital experiences.
           </p>

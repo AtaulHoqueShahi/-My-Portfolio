@@ -139,3 +139,27 @@ section { padding:92px 0; scroll-margin-top:76px; }
 @media (prefers-reduced-motion: reduce) {
   *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; }
 }
+.photo-frame {
+  position: relative;
+  width: 100%;
+  max-width: 340px;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0f172a;
+  
+  /* কোনো rotate/transform নেই — একদম সোজা */
+  transform: none !important;
+  
+  /* পরিষ্কার পার্পল গ্লো */
+  box-shadow: 
+    0 0 0 3px rgba(167, 139, 250, 0.5),
+    0 0 25px rgba(139, 92, 246, 0.3);
+}
+
+.profile-image {
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 20px;
+  transform: none !important;   /* ছবিও সোজা থাকবে */
+}

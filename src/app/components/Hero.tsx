@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import ProfileImage from "@/assets/ChatGPT Image May 27, 2026, 12_15_01 AM.png";
+import ProfileImage from "@/assets/WhatsApp Image 2026-07-29 at 12.58.03 AM.jpeg";
 import {
   ArrowDownToLine,
   ArrowUpRight,
@@ -51,16 +51,16 @@ export default function Hero() {
       </div>
 
       <div className="photo-frame">
-  <div className="photo-inner">
-    <Image
-      src={ProfileImage}
-      alt="Ataul Hoque Shahi"
-      width={400}
-      height={400}
-      priority
-      className="profile-image"
-    />
-  </div>
+<div className="photo-frame">
+  <Image
+    src={ProfileImage}
+    alt="Ataul Hoque Shahi"
+    fill
+    priority
+    sizes="(max-width: 768px) 100vw, 340px"
+    className="profile-image"
+  />
+</div>
 </div>
     </section>
   );
