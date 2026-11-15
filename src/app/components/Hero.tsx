@@ -1,5 +1,6 @@
-
+import Image from "next/image";
 import Link from "next/link";
+import ProfileImage from "@/assets/ChatGPT Image May 27, 2026, 12_15_01 AM.png";
 import {
   ArrowDownToLine,
   ArrowUpRight,
@@ -49,20 +50,18 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="photo-frame" aria-label="Profile photo placeholder">
-        <div className="photo-inner">
-          <div className="avatar">AH</div>
-          <strong
-            className="text-xl font-semibold"
-            style={{ fontFamily: "Space Grotesk, sans-serif" }}
-          >
-            {site.name}
-          </strong>
-          <span className="photo-note">
-            Add your professional photo here
-          </span>
-        </div>
-      </div>
+      <div className="photo-frame">
+  <div className="photo-inner">
+    <Image
+      src={ProfileImage}
+      alt="Ataul Hoque Shahi"
+      width={400}
+      height={400}
+      priority
+      className="profile-image"
+    />
+  </div>
+</div>
     </section>
   );
 }
