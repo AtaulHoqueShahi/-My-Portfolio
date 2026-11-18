@@ -27,7 +27,7 @@ export default function Education() {
             </p>
 
             <p className="m-0 text-sm text-slate-400">
-              Feni, Bangladesh · 3rd Semester · Currently Studying
+              Feni, Bangladesh · 4th Semester · Currently Studying
             </p>
           </div>
         </div>
